@@ -2,11 +2,15 @@
 
 This container runs Plex Server on a ARMv7 board, like Raspberry Pi 2 or 3.
 
+Check my Wiki page on Github for more informations. ( https://github.com/crocandr/docker-plex-rpi/wiki )
+
 ## Build
 
 ```
 docker build -t croc/plex-rpi .
 ```
+
+You can use your own base image. Check my wiki page for more informations.
 
 ## Usage
 
@@ -24,6 +28,7 @@ Where:
 ## Config
 
 **VERY IMPORTANT!!**
+
 You can config the plex server only with `http://127.0.0.1:32400/web` page. So you should use port forward the plex port on the raspberry to your machine.
 
 Example:
