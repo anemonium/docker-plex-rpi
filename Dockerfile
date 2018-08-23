@@ -5,7 +5,7 @@ RUN [ "cross-build-start" ]
 RUN apt-get update \
   && apt-get install -y curl less
 RUN dpkg --add-architecture armhf
-RUN export DEBIAN_FRONTEND=noninteractive && curl -L -o /tmp/plex.deb https://dev2day.de/files/plexmediaserver-installer_1.13.5.5291-6fa5e50a8-1_armhf.deb \ 
+RUN export DEBIAN_FRONTEND=noninteractive && curl -L -o /tmp/plex.deb https://plex.tv/downloads/latest/1?channel=16&build=linux-synology-armv7&distro=synology&X-Plex-Token=PqxX8JjKU82zh8N893s9 \ 
   && dpkg -i /tmp/plex.deb
   
 #RUN systemctl disable plexmediaserver
